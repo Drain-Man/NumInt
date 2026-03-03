@@ -1,8 +1,9 @@
 # NumInt
 
+[![Release](https://img.shields.io/github/v/release/Drain-Man/NumInt)](https://github.com/Drain-Man/NumInt/releases)
 [![Python](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![GitHub release](https://img.shields.io/github/v/release/Drain-Man/NumInt)](https://github.com/Drain-Man/NumInt/releases)
+
 
 **NumInt** is a Python tool to approximate definite integrals using standard numerical methods: Left-hand, Right-hand, Midpoint, Trapezoid, and Simpson. It supports both interactive input and CLI commands.
 
@@ -68,7 +69,7 @@ Pre-built Windows Executable:
 Windows users can run **NumInt** without installing Python
 
 1. Download the Windows executable from the **Releases** section:
-https://github.com/Drain-Man/NumInt/releases
+[Releases](https://github.com/Drain-Man/NumInt/releases)
 
 
 2. Run from the command line with CLI arguments:
@@ -78,7 +79,7 @@ https://github.com/Drain-Man/NumInt/releases
 ```
 
 3. Run the `.exe` without CLI Arguments to use in interactive mode.
-**Note:** This Version is v1.0. Future releases may include updated binaries.
+**Note:** This version is v1.0. Future releases may include updated binaries.
 
 Building the Windows Executable Yourself:
 If you prefer to build the `.exe` locally (e.g. for a newer version):
@@ -87,7 +88,7 @@ If you prefer to build the `.exe` locally (e.g. for a newer version):
 # Install PyInstaller if not installed
 pip install pyinstaller
 
-#From the project root
+# From the project root
 pyinstaller --onefile --name NumInt --icon Resources\NumInt.ico main.py
 ```
 

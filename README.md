@@ -110,7 +110,7 @@ Enter the type of approximation
 3: Center
 4: Trapezoid
 5: Simpson
-(Enter the method's number or name as it appears here): simpson
+(Enter number or name): 5
 
 Simpson approximation: 2.00026917
 Exact value:           2

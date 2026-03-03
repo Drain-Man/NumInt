@@ -6,6 +6,7 @@ __pycache__/
 # PyInstaller build folders
 build/
 dist/
+*.exe
 *.spec
 
 # Keep releases folder, ignore everything inside except .exe

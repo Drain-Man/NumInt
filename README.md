@@ -63,11 +63,8 @@ Parameters:
 Pre-built Windows Executable:
 Windows users can run **NumInt** without installing Python
 
-1. Download the pre-built `.exe` from the `releases/` folder:
-
-```text
-releases/NumInt.exe
-```
+1. Download the Windows executable from the **Releases** section:
+https://github.com/Drain-Man/NumInt/releases
 
 
 2. Run from the command line with CLI arguments:

@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build folders
+build/
+dist/
+*.spec
+
+# Keep releases folder, ignore everything inside except .exe
+releases/*
+!releases/NumInt.exe
+
+# IDE / editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python environment
+env/
+venv/

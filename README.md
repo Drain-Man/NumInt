@@ -1,5 +1,9 @@
 # NumInt
 
+[![Python](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/Drain-Man/NumInt)](https://github.com/Drain-Man/NumInt/releases)
+
 **NumInt** is a Python tool to approximate definite integrals using standard numerical methods: Left-hand, Right-hand, Midpoint, Trapezoid, and Simpson. It supports both interactive input and CLI commands.
 
 ---

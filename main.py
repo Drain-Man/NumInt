@@ -3,9 +3,9 @@ from numint.numint import num_int
 import argparse
 import sys
 
-VERSION = "1.0"
+VERSION = "1.0.1"
 x = sp.symbols('x')
-locals_dict = {"pi": sp.pi, "Pi": sp.pi, "PI": sp.pi, "e": sp.E, "E": sp.E}
+locals_dict = {"pi": sp.pi, "Pi": sp.pi, "PI": sp.pi, "e": sp.E, "E": sp.E, "ln": sp.log}
 
 def get_function(cli_input=None):
     """Return a valid callable f(x) and sympy expression"""
@@ -21,8 +21,6 @@ def get_function(cli_input=None):
             if undefined_symbols:
                 raise ValueError(f"Expression contains undefined symbols: {', '.join(str(s) for s in undefined_symbols)}")
             f = sp.lambdify(x, sym_expr, "math")
-            # Test evaluation at 0
-            f(0)
             return f, sym_expr
         except Exception as e:
             if cli_input:

@@ -4,17 +4,16 @@
 [![Python](https://img.shields.io/badge/python-3.x-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-
 **NumInt** is a Python tool to approximate definite integrals using standard numerical methods: Left-hand, Right-hand, Midpoint, Trapezoid, and Simpson. It supports both interactive input and CLI commands.
 
 ---
 
 ## Features
 
-- Approximate definite integrals with 5 standard numerical methods.
-- Compute absolute error compared to the exact integral (when possible).
-- Supports constants like `pi` and `e`.
-- Interactive prompts or CLI arguments.
+* Approximate definite integrals with 5 standard numerical methods.
+* Compute absolute error compared to the exact integral (when possible).
+* Supports constants like `pi` and `e`.
+* Interactive prompts or CLI arguments.
 
 ---
 
@@ -28,6 +27,7 @@ cd NumInt
 ```
 
 Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -44,10 +44,11 @@ python main.py
 ```
 
 You will be asked for:
-- Function `f(x)` (e.g., `sin(x)+x^2`)
-- Lower and upper bounds
-- Number of subintervals
-- Approximation method
+
+* Function `f(x)` (e.g., `sin(x)+x^2`)
+* Lower and upper bounds
+* Number of subintervals
+* Approximation method
 
 CLI Mode:
 
@@ -57,20 +58,60 @@ python main.py --function "sin(x)" --lower 0 --upper pi --n 100 --method simpson
 
 Parameters:
 
-- `--function`: Function to integrate (supports `^` for exponentiation)
-- `--lower`: Lower bound of interval
-- `--upper`: Upper bound of interval
-- `--n`: number of subintervals
-- `--method`: Approximation method (`left`, `right`, `center`, `trapezoid`, `simpson`)
-- `--version`: Show program version and exit
+* `--function`: Function to integrate (supports `^` for exponentiation)
+* `--lower`: Lower bound of interval
+* `--upper`: Upper bound of interval
+* `--n`: number of subintervals
+* `--method`: Approximation method (`left`, `right`, `center`, `trapezoid`, `simpson`)
+* `--version`: Show program version and exit
 
+---
+
+## Supported Mathematical Functions
+
+NumInt parses functions using **SymPy**, allowing many standard mathematical expressions.
+
+Examples:
+
+```text
+sin(x)
+cos(x)
+x^2 + 3*x
+exp(x)
+sqrt(x)
+```
+
+### Logarithms
+
+Logarithms follow SymPy syntax:
+
+```text
+log(x)      # natural logarithm (ln)
+log(x, 10)  # base-10 logarithm
+```
+
+NumInt also supports:
+
+```text
+ln(x)
+```
+
+which is treated as an alias for `log(x)`.
+
+Constants supported:
+
+```text
+pi
+e
+```
+
+---
 
 Pre-built Windows Executable:
 Windows users can run **NumInt** without installing Python
 
 1. Download the Windows executable from the **Releases** section:
-[Releases](https://github.com/Drain-Man/NumInt/releases)
-
+   https://github.com/Drain-Man/NumInt/releases
 
 2. Run from the command line with CLI arguments:
 
@@ -79,7 +120,9 @@ Windows users can run **NumInt** without installing Python
 ```
 
 3. Run the `.exe` without CLI Arguments to use in interactive mode.
-**Note:** This version is v1.0. Future releases may include updated binaries.
+   **Note:** This Version is v1.0. Future releases may include updated binaries.
+
+---
 
 Building the Windows Executable Yourself:
 If you prefer to build the `.exe` locally (e.g. for a newer version):
@@ -97,6 +140,7 @@ The `.exe` will appear in the `dist/` folder.
 ---
 
 ## Examples
+
 Interactive Example:
 
 ```text
@@ -110,7 +154,7 @@ Enter the type of approximation
 3: Center
 4: Trapezoid
 5: Simpson
-(Enter number or name): 5
+(Enter number or name): simpson
 
 Simpson approximation: 2.00026917
 Exact value:           2
@@ -120,6 +164,7 @@ Absolute error:        2.692e-04
 ---
 
 ### **Optional**: Add NumInt to PATH (Windows)
+
 If you want to run `NumInt.exe` from any folder without typing the full path:
 
 1. Move `NumInt.exe` to a permanent location (e.g. `C:\Program Files\NumInt\`)
@@ -134,6 +179,12 @@ NumInt.exe --version
 
 ---
 
+## Changelog
+
+All notable changes to this project are documented in **CHANGELOG.md**.
+
+---
+
 ## Credits / Dependencies
 
-- **SymPy** – Python library for symbolic mathematics. [https://www.sympy.org/](https://www.sympy.org/)
+* **SymPy** – Python library for symbolic mathematics. https://www.sympy.org/
